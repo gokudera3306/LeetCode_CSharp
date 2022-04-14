@@ -43,11 +43,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Problems\Q104_MaximumDepthOfBinaryTree.cs" />
+    <Compile Include="Problems\Q11_ContainerWithMostWater.cs" />
+    <Compile Include="Problems\Q15_3Sum.cs" />
+    <Compile Include="Problems\Q16_3SumClosest.cs" />
+    <Compile Include="Problems\Q17_LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="Problems\Q19_RemoveNthNodeFromEndOfList.cs" />
+    <Compile Include="Problems\Q1_TwoSum.cs" />
+    <Compile Include="Problems\Q20_ValidParentheses.cs" />
+    <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
+    <Compile Include="Problems\Q22_GenerateParentheses.cs" />
+    <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
+    <Compile Include="Problems\Q2_AddTwoNumbers.cs" />
+    <Compile Include="Problems\Q31_NextPermutation.cs" />
+    <Compile Include="Problems\Q33_SearchInRotatedSortedArray.cs" />
+    <Compile Include="Problems\Q34_FindFirstAndLastPositionOfElementInSortedArray.cs" />
+    <Compile Include="Problems\Q39_CombinationSum.cs" />
+    <Compile Include="Problems\Q3_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="Problems\Q41_FirstMissingPositive.cs" />
+    <Compile Include="Problems\Q42_TrappingRainWater.cs" />
+    <Compile Include="Problems\Q46_Permutations.cs" />
+    <Compile Include="Problems\Q49_GroupAnagrams.cs" />
+    <Compile Include="Problems\Q4_MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Problems\Q53_MaximumSubarray.cs" />
+    <Compile Include="Problems\Q55_JumpGame.cs" />
+    <Compile Include="Problems\Q56_MergeIntervals.cs" />
+    <Compile Include="Problems\Q5_LongestPalindromicSubstring.cs" />
+    <Compile Include="Problems\Q62_UniquePaths.cs" />
+    <Compile Include="Problems\Q6_ZigzagConversion.cs" />
+    <Compile Include="Problems\Q70_ClimbingStairs.cs" />
+    <Compile Include="Problems\Q7_ReverseInteger.cs" />
+    <Compile Include="Problems\Q32_LongestValidParentheses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structure\ListNode.cs" />
+    <Compile Include="Structure\TreeNode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
