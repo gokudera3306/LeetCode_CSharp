@@ -71,6 +71,7 @@
     <Compile Include="Problems\Q56_MergeIntervals.cs" />
     <Compile Include="Problems\Q5_LongestPalindromicSubstring.cs" />
     <Compile Include="Problems\Q62_UniquePaths.cs" />
+    <Compile Include="Problems\Q63_MinimumPathSum.cs" />
     <Compile Include="Problems\Q6_ZigzagConversion.cs" />
     <Compile Include="Problems\Q70_ClimbingStairs.cs" />
     <Compile Include="Problems\Q73_SetMatrixZeroes.cs" />
