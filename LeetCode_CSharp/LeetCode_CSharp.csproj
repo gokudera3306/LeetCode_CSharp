@@ -78,6 +78,7 @@
     <Compile Include="Problems\Q70_ClimbingStairs.cs" />
     <Compile Include="Problems\Q73_SetMatrixZeroes.cs" />
     <Compile Include="Problems\Q78_Subsets.cs" />
+    <Compile Include="Problems\Q79_WordSearch.cs" />
     <Compile Include="Problems\Q7_ReverseInteger.cs" />
     <Compile Include="Problems\Q32_LongestValidParentheses.cs" />
     <Compile Include="Problems\Interview_TwoSumLessThanK.cs" />
