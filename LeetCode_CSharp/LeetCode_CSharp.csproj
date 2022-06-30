@@ -49,6 +49,7 @@
     <Compile Include="Problems\Q15_3Sum.cs" />
     <Compile Include="Problems\Q16_3SumClosest.cs" />
     <Compile Include="Problems\Q17_LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="Problems\Q198_HouseRobber.cs" />
     <Compile Include="Problems\Q19_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems\Q1_TwoSum.cs" />
     <Compile Include="Problems\Q20_ValidParentheses.cs" />
