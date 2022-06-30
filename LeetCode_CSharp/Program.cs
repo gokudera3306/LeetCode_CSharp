@@ -7,7 +7,6 @@ namespace LeetCode_CSharp
     {
         private static void Main(string[] args)
         {
-
         }
     }
 }
