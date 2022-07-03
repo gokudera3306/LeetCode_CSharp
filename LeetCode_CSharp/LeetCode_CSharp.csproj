@@ -82,6 +82,7 @@
     <Compile Include="Problems\Q7_ReverseInteger.cs" />
     <Compile Include="Problems\Q32_LongestValidParentheses.cs" />
     <Compile Include="Problems\Interview_TwoSumLessThanK.cs" />
+    <Compile Include="Problems\Q98_ValidateBinarySearchTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structure\ListNode.cs" />
