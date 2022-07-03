@@ -56,6 +56,7 @@
     <Compile Include="Problems\Q208_ImplementTrie.cs" />
     <Compile Include="Problems\Q20_ValidParentheses.cs" />
     <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
+    <Compile Include="Problems\Q221_MaximalSquare.cs" />
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
     <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
     <Compile Include="Problems\Q2_AddTwoNumbers.cs" />
