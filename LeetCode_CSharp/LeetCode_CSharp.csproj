@@ -53,6 +53,7 @@
     <Compile Include="Problems\Q19_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems\Q1_TwoSum.cs" />
     <Compile Include="Problems\Q200_NumberOfIslands.cs" />
+    <Compile Include="Problems\Q208_ImplementTrie.cs" />
     <Compile Include="Problems\Q20_ValidParentheses.cs" />
     <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
