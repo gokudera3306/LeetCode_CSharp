@@ -7,14 +7,9 @@ namespace LeetCode_CSharp
     {
         private static void Main(string[] args)
         {
-            var question = new Q79_WordSearch();
+            var question = new Q139_WordBreak();
 
-            var board = new char[3][];
-            board[0] = new[] { 'A', 'B', 'C', 'E' };
-            board[1] = new[] { 'S', 'F', 'E', 'S' };
-            board[2] = new[] { 'A', 'D', 'E', 'E' };
-
-            var result = question.Exist(board, "ABCESEEEFS");
+            var result = question.WordBreak("leetcode", new List<string>() { "leet", "code" });
         }
     }
 }
