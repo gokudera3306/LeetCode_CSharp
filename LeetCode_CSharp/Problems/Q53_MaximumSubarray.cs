@@ -5,7 +5,7 @@ namespace LeetCode_CSharp.Problems
 {
     internal class Q53MaximumSubarray
     {
-        public class Node
+        class Node
         {
             public int Sum;
 
@@ -76,7 +76,7 @@ namespace LeetCode_CSharp.Problems
             return maxSum;
         }
 
-        public int FindMaxSumRight(List<Node> nodes, int index)
+        private int FindMaxSumRight(List<Node> nodes, int index)
         {
             var maxResult = 0;
 
@@ -99,7 +99,7 @@ namespace LeetCode_CSharp.Problems
             return maxResult;
         }
 
-        public int FindMaxSumLeft(List<Node> nodes, int index)
+        private int FindMaxSumLeft(List<Node> nodes, int index)
         {
             var maxResult = 0;
 
