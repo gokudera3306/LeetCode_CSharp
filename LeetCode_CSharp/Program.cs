@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using LeetCode_CSharp.Problems;
+using LeetCode_CSharp.Structure;
 
 namespace LeetCode_CSharp
 {
@@ -7,9 +8,14 @@ namespace LeetCode_CSharp
     {
         private static void Main(string[] args)
         {
-            var question = new Q139_WordBreak();
+            var question = new Q148_SortList();
 
-            var result = question.WordBreak("leetcode", new List<string>() { "leet", "code" });
+            var head = new ListNode(4);
+            head.Next = new ListNode(2);
+            head.Next.Next = new ListNode(1);
+            head.Next.Next.Next = new ListNode(3);
+
+            var result = question.SortList(head);
         }
     }
 }
