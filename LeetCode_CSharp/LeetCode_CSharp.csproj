@@ -65,6 +65,7 @@
     <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
     <Compile Include="Problems\Q2_AddTwoNumbers.cs" />
     <Compile Include="Problems\Q31_NextPermutation.cs" />
+    <Compile Include="Problems\Q322_CoinChange.cs" />
     <Compile Include="Problems\Q33_SearchInRotatedSortedArray.cs" />
     <Compile Include="Problems\Q34_FindFirstAndLastPositionOfElementInSortedArray.cs" />
     <Compile Include="Problems\Q39_CombinationSum.cs" />
