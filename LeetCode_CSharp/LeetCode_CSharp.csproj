@@ -62,6 +62,7 @@
     <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
     <Compile Include="Problems\Q221_MaximalSquare.cs" />
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
+    <Compile Include="Problems\Q230_KthSmallestElementInABST.cs" />
     <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
     <Compile Include="Problems\Q2_AddTwoNumbers.cs" />
     <Compile Include="Problems\Q31_NextPermutation.cs" />
