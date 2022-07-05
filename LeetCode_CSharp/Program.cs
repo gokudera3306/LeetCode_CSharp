@@ -8,14 +8,9 @@ namespace LeetCode_CSharp
     {
         private static void Main(string[] args)
         {
-            var question = new Q148_SortList();
+            var question = new Q215_KthLargestElementInAnArray();
 
-            var head = new ListNode(4);
-            head.Next = new ListNode(2);
-            head.Next.Next = new ListNode(1);
-            head.Next.Next.Next = new ListNode(3);
-
-            var result = question.SortList(head);
+            var result = question.FindKthLargest(new[] { 3, 2, 1, 5, 6, 4 }, 2);
         }
     }
 }

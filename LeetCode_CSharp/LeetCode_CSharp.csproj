@@ -60,6 +60,7 @@
     <Compile Include="Problems\Q200_NumberOfIslands.cs" />
     <Compile Include="Problems\Q208_ImplementTrie.cs" />
     <Compile Include="Problems\Q20_ValidParentheses.cs" />
+    <Compile Include="Problems\Q215_KthLargestElementInAnArray.cs" />
     <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
     <Compile Include="Problems\Q221_MaximalSquare.cs" />
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
@@ -92,6 +93,7 @@
     <Compile Include="Problems\Q32_LongestValidParentheses.cs" />
     <Compile Include="Problems\Interview_TwoSumLessThanK.cs" />
     <Compile Include="Problems\Q98_ValidateBinarySearchTree.cs" />
+    <Compile Include="Problems\Sorting.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Structure\ListNode.cs" />
