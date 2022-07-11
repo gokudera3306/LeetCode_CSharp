@@ -58,11 +58,13 @@
     <Compile Include="Problems\Q19_RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="Problems\Q1_TwoSum.cs" />
     <Compile Include="Problems\Q200_NumberOfIslands.cs" />
+    <Compile Include="Problems\Q207_CourseSchedule.cs" />
     <Compile Include="Problems\Q208_ImplementTrie.cs" />
     <Compile Include="Problems\Q20_ValidParentheses.cs" />
     <Compile Include="Problems\Q215_KthLargestElementInAnArray.cs" />
     <Compile Include="Problems\Q21_MergeTwoSortedLists.cs" />
     <Compile Include="Problems\Q221_MaximalSquare.cs" />
+    <Compile Include="Problems\Q226_InvertBinaryTree.cs" />
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
     <Compile Include="Problems\Q230_KthSmallestElementInABST.cs" />
     <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
@@ -71,6 +73,7 @@
     <Compile Include="Problems\Q322_CoinChange.cs" />
     <Compile Include="Problems\Q33_SearchInRotatedSortedArray.cs" />
     <Compile Include="Problems\Q34_FindFirstAndLastPositionOfElementInSortedArray.cs" />
+    <Compile Include="Problems\Q35_SearchInsertPosition.cs" />
     <Compile Include="Problems\Q39_CombinationSum.cs" />
     <Compile Include="Problems\Q3_LongestSubstringWithoutRepeatingCharacters.cs" />
     <Compile Include="Problems\Q41_FirstMissingPositive.cs" />
