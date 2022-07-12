@@ -10,27 +10,46 @@ namespace LeetCode_CSharp.Problems
     {
         public bool CanFinish(int numCourses, int[][] prerequisites)
         {
-            var graph = new List<List<int>>(numCourses);
+            var graph = new List<int>[numCourses];
 
             foreach (var prerequisite in prerequisites)
             {
-                if (graph[prerequisite[0]] == null) graph[prerequisite[0]] = new List<int>();
-                graph[prerequisite[0]].Add(prerequisite[1]);
+                if (prerequisite[0] == prerequisite[1]) return false;
+
+                if (graph[prerequisite[1]] == null) graph[prerequisite[1]] = new List<int>();
+                graph[prerequisite[1]].Add(prerequisite[0]);
             }
+            var seen = new HashSet<int>();
 
-            var firstCourseIndex = -1;
-
-            for (var index = 0; index < graph.Count; index++)
+            for (var startIndex = 0; startIndex < numCourses - 1; startIndex++)
             {
-                if (graph[index] == null)
-                {
-                    firstCourseIndex = index;
-                    break;
-                }
+                var visited = new HashSet<int>();
+
+                var hasLoop = DFS(startIndex, graph, visited, seen);
+                if (hasLoop) return false;
+            }
+            
+            return true;
+        }
+
+        private bool DFS(int currentIndex, List<int>[] graph, HashSet<int> visited, HashSet<int> seen)
+        {
+            if (visited.Contains(currentIndex)) return true;
+            if (seen.Contains(currentIndex)) return false;
+
+            seen.Add(currentIndex);
+
+            if (graph[currentIndex] == null) return false;
+
+            foreach (var nextIndex in graph[currentIndex])
+            {
+                visited.Add(currentIndex);
+                var hasLoop = DFS(nextIndex, graph, visited, seen);
+                visited.Remove(currentIndex);
+                if (hasLoop) return true;
             }
 
-
-
+            return false;
         }
     }
 }
