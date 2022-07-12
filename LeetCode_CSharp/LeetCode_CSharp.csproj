@@ -68,6 +68,7 @@
     <Compile Include="Problems\Q22_GenerateParentheses.cs" />
     <Compile Include="Problems\Q230_KthSmallestElementInABST.cs" />
     <Compile Include="Problems\Q23_MergeKSortedLists.cs" />
+    <Compile Include="Problems\Q287_FindTheDuplicateNumber.cs" />
     <Compile Include="Problems\Q2_AddTwoNumbers.cs" />
     <Compile Include="Problems\Q31_NextPermutation.cs" />
     <Compile Include="Problems\Q322_CoinChange.cs" />
