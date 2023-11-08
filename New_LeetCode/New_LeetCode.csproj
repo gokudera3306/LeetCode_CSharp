@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Problems\" />
     <Folder Include="Structure\" />
   </ItemGroup>
 
