@@ -17,15 +17,15 @@ internal class Q104MaximumDepthOfBinaryTree
     {
         int leftDepth, rightDepth;
 
-        if (root.Left is null)
+        if (root.left is null)
             leftDepth = 1;
         else
-            leftDepth = FindMaxDepth(root.Left) + 1;
+            leftDepth = FindMaxDepth(root.left) + 1;
 
-        if (root.Right is null)
+        if (root.right is null)
             rightDepth = 1;
         else
-            rightDepth = FindMaxDepth(root.Right) + 1;
+            rightDepth = FindMaxDepth(root.right) + 1;
 
         return leftDepth > rightDepth ? leftDepth : rightDepth;
     }

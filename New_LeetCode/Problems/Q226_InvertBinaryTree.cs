@@ -18,15 +18,15 @@ internal class Q226_InvertBinaryTree
 
         if (oldTree == null) return;
 
-        copyTree = new TreeNode(oldTree.Val);
+        copyTree = new TreeNode(oldTree.val);
 
         TreeNode copyLeftTree;
-        CopyTree(oldTree.Right, out copyLeftTree);
+        CopyTree(oldTree.right, out copyLeftTree);
 
         TreeNode copyRightTree;
-        CopyTree(oldTree.Left, out copyRightTree);
+        CopyTree(oldTree.left, out copyRightTree);
 
-        copyTree.Left = copyLeftTree;
-        copyTree.Right = copyRightTree;
+        copyTree.left = copyLeftTree;
+        copyTree.right = copyRightTree;
     }
 }

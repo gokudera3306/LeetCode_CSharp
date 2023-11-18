@@ -14,13 +14,13 @@ internal class Q230_KthSmallestElementInABST
     {
         if (node == null) return -1;
 
-        var result = TraverseTree(node.Left, k, ref currentIndex);
+        var result = TraverseTree(node.left, k, ref currentIndex);
         if (result != -1) return result;
 
         currentIndex++;
-        if (currentIndex == k) return node.Val;
+        if (currentIndex == k) return node.val;
             
-        result = TraverseTree(node.Right, k, ref currentIndex);
+        result = TraverseTree(node.right, k, ref currentIndex);
         if (result != -1) return result;
 
         return -1;

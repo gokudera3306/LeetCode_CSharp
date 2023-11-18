@@ -20,13 +20,13 @@ internal class DFS
         {
             var currentNode = nodeStack.Pop();
 
-            Console.Write($"{currentNode.Val}, ");
+            Console.Write($"{currentNode.val}, ");
 
-            if (currentNode.Right != null)
-                nodeStack.Push(currentNode.Right);
+            if (currentNode.right != null)
+                nodeStack.Push(currentNode.right);
 
-            if (currentNode.Left != null)
-                nodeStack.Push(currentNode.Left);
+            if (currentNode.left != null)
+                nodeStack.Push(currentNode.left);
         }
     }
 
@@ -44,15 +44,15 @@ internal class DFS
             var node1 = stack1.Pop();
             stack2.Push(node1);
 
-            if (node1.Left != null)
-                stack1.Push(node1.Left);
+            if (node1.left != null)
+                stack1.Push(node1.left);
 
-            if (node1.Right != null)
-                stack1.Push(node1.Right);
+            if (node1.right != null)
+                stack1.Push(node1.right);
         }
 
         while (stack2.Count > 0)
-            Console.Write($"{stack2.Pop().Val}, ");
+            Console.Write($"{stack2.Pop().val}, ");
     }
 
     public void IterativeInOrder(TreeNode? node)
@@ -67,12 +67,12 @@ internal class DFS
             while (current != null)
             {
                 nodeStack.Push(current);
-                current = current.Left;
+                current = current.left;
             }
 
             current = nodeStack.Pop();
-            Console.Write($"{current.Val}, ");
-            current = current.Right;
+            Console.Write($"{current.val}, ");
+            current = current.right;
         }
     }
 }

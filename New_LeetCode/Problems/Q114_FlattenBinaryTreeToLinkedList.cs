@@ -8,23 +8,23 @@ public class Q114_FlattenBinaryTreeToLinkedList
     {
         if (root == null) return;
 
-        Flatten(root.Left);
-        Flatten(root.Right);
+        Flatten(root.left);
+        Flatten(root.right);
 
-        var leftFlattenTree = root.Left;
-        var rightFlattenTree = root.Right;
+        var leftFlattenTree = root.left;
+        var rightFlattenTree = root.right;
 
-        root.Left = null;
+        root.left = null;
 
         if (leftFlattenTree != null)
         {
-            root.Right = leftFlattenTree;
+            root.right = leftFlattenTree;
 
             var lastNode = leftFlattenTree;
-            while (lastNode.Right != null)
-                lastNode = lastNode.Right;
+            while (lastNode.right != null)
+                lastNode = lastNode.right;
 
-            lastNode.Right = rightFlattenTree;
+            lastNode.right = rightFlattenTree;
         }
     }
 }

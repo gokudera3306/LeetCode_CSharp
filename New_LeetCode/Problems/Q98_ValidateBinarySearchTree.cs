@@ -8,11 +8,11 @@ public class Q98_ValidateBinarySearchTree
     {
         if (root == null) return true;
 
-        if (root.Left != null && root.Left.Val >= root.Val) return false;
-        if (root.Right != null && root.Right.Val <= root.Val) return false;
+        if (root.left != null && root.left.val >= root.val) return false;
+        if (root.right != null && root.right.val <= root.val) return false;
 
-        if (!IsValidBST(root.Left, null, root.Val)) return false;
-        if (!IsValidBST(root.Right, root.Val, null)) return false;
+        if (!IsValidBST(root.left, null, root.val)) return false;
+        if (!IsValidBST(root.right, root.val, null)) return false;
 
         return true;
     }
@@ -21,27 +21,27 @@ public class Q98_ValidateBinarySearchTree
     {
         if (root == null) return true;
 
-        if (root.Left != null)
+        if (root.left != null)
         {
-            if (root.Left.Val >= root.Val)
+            if (root.left.val >= root.val)
                 return false;
 
-            if (leftBound != null && root.Left.Val <= leftBound)
+            if (leftBound != null && root.left.val <= leftBound)
                 return false;
 
         }
 
-        if (root.Right != null)
+        if (root.right != null)
         {
-            if (root.Right.Val <= root.Val)
+            if (root.right.val <= root.val)
                 return false;
 
-            if (rightBound != null && root.Right.Val >= rightBound)
+            if (rightBound != null && root.right.val >= rightBound)
                 return false;
         }
 
-        if (!IsValidBST(root.Left, leftBound, root.Val)) return false;
-        if (!IsValidBST(root.Right, root.Val, rightBound)) return false;
+        if (!IsValidBST(root.left, leftBound, root.val)) return false;
+        if (!IsValidBST(root.right, root.val, rightBound)) return false;
 
         return true;
     }

@@ -2,8 +2,8 @@
 
 public class TreeNode
 {
-    public int Val;
-    public TreeNode? Left;
-    public TreeNode? Right;
-    public TreeNode(int x) { Val = x; }
+    public int val;
+    public TreeNode? left;
+    public TreeNode? right;
+    public TreeNode(int x) { val = x; }
 }
