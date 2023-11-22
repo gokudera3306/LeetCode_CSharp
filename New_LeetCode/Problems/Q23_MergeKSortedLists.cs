@@ -12,15 +12,15 @@ internal class Q23MergeKSortedLists
         {
             if (lists[x] is null) continue;
 
-            if (smallestIndex == -1 || lists[smallestIndex].Val > lists[x].Val)
+            if (smallestIndex == -1 || lists[smallestIndex].val > lists[x].val)
                 smallestIndex = x;
         }
 
         if (smallestIndex == -1) return null;
 
-        var head = new ListNode(lists[smallestIndex].Val);
+        var head = new ListNode(lists[smallestIndex].val);
         var tempNode = head;
-        lists[smallestIndex] = lists[smallestIndex].Next;
+        lists[smallestIndex] = lists[smallestIndex].next;
 
         //start combine lists
         while (HasValue(ref lists))
@@ -30,13 +30,13 @@ internal class Q23MergeKSortedLists
             {
                 if (lists[x] is null) continue;
 
-                if (smallestIndex == -1 || lists[smallestIndex].Val > lists[x].Val)
+                if (smallestIndex == -1 || lists[smallestIndex].val > lists[x].val)
                     smallestIndex = x;
             }
 
-            tempNode.Next = new ListNode(lists[smallestIndex].Val);
-            tempNode = tempNode.Next;
-            lists[smallestIndex] = lists[smallestIndex].Next;
+            tempNode.next = new ListNode(lists[smallestIndex].val);
+            tempNode = tempNode.next;
+            lists[smallestIndex] = lists[smallestIndex].next;
         }
 
         return head;

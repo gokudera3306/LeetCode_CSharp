@@ -12,20 +12,20 @@ internal class Q148_SortList
     private ListNode MergeSort(ListNode head)
     {
         if (head == null) return null;
-        if (head.Next == null) return head;
+        if (head.next == null) return head;
 
         ListNode temp = null;
         var midNode = head;
         var tailNode = head;
 
-        while (midNode != null && tailNode?.Next != null)
+        while (midNode != null && tailNode?.next != null)
         {
             temp = midNode;
-            midNode = midNode.Next;
-            tailNode = tailNode.Next.Next;
+            midNode = midNode.next;
+            tailNode = tailNode.next.next;
         }
 
-        if (temp != null) temp.Next = null;
+        if (temp != null) temp.next = null;
 
         var firstList = MergeSort(head);
         var secondList = MergeSort(midNode);
@@ -40,15 +40,15 @@ internal class Q148_SortList
 
         ListNode head;
 
-        if (firstList.Val < secondList.Val)
+        if (firstList.val < secondList.val)
         {
             head = firstList;
-            firstList = firstList.Next;
+            firstList = firstList.next;
         }
         else
         {
             head = secondList;
-            secondList = secondList.Next;
+            secondList = secondList.next;
         }
 
         var current = head;
@@ -57,21 +57,21 @@ internal class Q148_SortList
         {
             if (firstList == null)
             {
-                current.Next = secondList;
-                secondList = secondList.Next;
+                current.next = secondList;
+                secondList = secondList.next;
             }
-            else if (secondList == null || firstList.Val < secondList.Val)
+            else if (secondList == null || firstList.val < secondList.val)
             {
-                current.Next = firstList;
-                firstList = firstList.Next;
+                current.next = firstList;
+                firstList = firstList.next;
             }
             else
             {
-                current.Next = secondList;
-                secondList = secondList.Next;
+                current.next = secondList;
+                secondList = secondList.next;
             }
 
-            current = current.Next;
+            current = current.next;
         }
 
         return head;

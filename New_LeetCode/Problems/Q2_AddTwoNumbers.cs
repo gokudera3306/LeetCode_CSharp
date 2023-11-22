@@ -15,15 +15,15 @@ internal class Q2AddTwoNumbers
 
         do
         {
-            var tempSum = (currentL1?.Val ?? 0)
-                          + (currentL2?.Val ?? 0)
+            var tempSum = (currentL1?.val ?? 0)
+                          + (currentL2?.val ?? 0)
                           + nextInt;
 
             result += (tempSum % 10).ToString();
             nextInt = tempSum / 10;
 
-            currentL1 = currentL1?.Next;
-            currentL2 = currentL2?.Next;
+            currentL1 = currentL1?.next;
+            currentL2 = currentL2?.next;
         } while (currentL1 != null || currentL2 != null || nextInt != 0);
 
         ListNode final = null;
@@ -36,7 +36,7 @@ internal class Q2AddTwoNumbers
                 final = current;
             else
             {
-                current.Next = final;
+                current.next = final;
                 final = current;
             }
         }

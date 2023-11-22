@@ -2,7 +2,7 @@
 
 public class ListNode
 {
-    public readonly int Val;
-    public ListNode Next;
-    public ListNode(int x) { Val = x; }
+    public readonly int val;
+    public ListNode? next;
+    public ListNode(int x) { val = x; }
 }

@@ -11,15 +11,15 @@ internal class Q21MergeTwoSortedLists
         if (l1 == null) return l2;
         if (l2 == null) return l1;
 
-        if (l1.Val > l2.Val)
+        if (l1.val > l2.val)
         {
-            head = new ListNode(l2.Val);
-            l2 = l2.Next;
+            head = new ListNode(l2.val);
+            l2 = l2.next;
         }
         else
         {
-            head = new ListNode(l1.Val);
-            l1 = l1.Next;
+            head = new ListNode(l1.val);
+            l1 = l1.next;
         }
 
         var tempNode = head;
@@ -28,28 +28,28 @@ internal class Q21MergeTwoSortedLists
         {
             if (l1 == null)
             {
-                tempNode.Next = l2;
+                tempNode.next = l2;
                 break;
             }
 
             if (l2 == null)
             {
-                tempNode.Next = l1;
+                tempNode.next = l1;
                 break;
             }
 
-            if (l1.Val > l2.Val)
+            if (l1.val > l2.val)
             {
-                tempNode.Next = new ListNode(l2.Val);
-                l2 = l2.Next;
+                tempNode.next = new ListNode(l2.val);
+                l2 = l2.next;
             }
             else
             {
-                tempNode.Next = new ListNode(l1.Val);
-                l1 = l1.Next;
+                tempNode.next = new ListNode(l1.val);
+                l1 = l1.next;
             }
 
-            tempNode = tempNode.Next;
+            tempNode = tempNode.next;
         }
 
         return head;

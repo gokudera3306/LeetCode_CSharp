@@ -13,7 +13,7 @@ internal class Q19RemoveNthNodeFromEndOfList
         while (currentNode != null)
         {
             nodes.Add(currentNode);
-            currentNode = currentNode.Next;
+            currentNode = currentNode.next;
         }
 
         if (n == nodes.Count && nodes.Count == 1)
@@ -21,7 +21,7 @@ internal class Q19RemoveNthNodeFromEndOfList
         if (n == nodes.Count)
             return nodes[1];
 
-        nodes[nodes.Count - n - 1].Next = nodes[nodes.Count - n].Next;
+        nodes[nodes.Count - n - 1].next = nodes[nodes.Count - n].next;
 
         return head;
     }
